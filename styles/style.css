@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4; /* Fondo de la página en tono verde muy claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Títulos */
+h1, .form-header {
+    color: #007a33; /* Verde corporativo de Binter */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Botón personalizado */
+.btn-custom, .btn-primary {
+    background-color: #007a33; /* Verde Binter para botones */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-custom:hover, .btn-primary:hover {
+    background-color: #005f27; /* Color más oscuro al pasar el ratón */
+}
+
+/* Etiquetas */
+label, .form-label {
+    color: #005f27;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Elementos de selección y entradas */
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #007a33;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Contenedor de imágenes */
+.image-container, .text-center1 {
+    text-align: center;
+    margin-top: 25px;
+    width: 280px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 900px;
+    margin-top: 2rem;
+}
+
+/* Tarjeta y lista */
+.card-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #007a33;
+    color: #ffffff;
+}
+
+.list-group-item {
+    cursor: pointer;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.list-group-item:hover {
+    background-color: #007a33;
+    color: #ffffff;
+}
+
+/* Mensaje de bienvenida */
+.welcome-message {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    color: #007a33;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .form-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    h1, .form-header {
+        font-size: 1.2rem;
+    }
+}

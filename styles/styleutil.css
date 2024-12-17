@@ -1,0 +1,21 @@
+/* Estilos generales */
+body {
+    background-color: #f0f4f8; /* Fondo suave */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Cambiado de flex-start a center */
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Asegura que todo esté centrado */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Cont

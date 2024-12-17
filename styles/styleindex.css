@@ -1,0 +1,48 @@
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block; /* Esto no es necesario si estás usando flexbox */
+    margin: 0; /* Asegúrate de que no haya margen automático */
+}
+
+
+/* Navbar personalizado */
+.navbar {
+    background-color: #008f39 !important; /* Verde corporativo de Binter */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Aseguramos que el color sea blanco */
+    font-weight: 500;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c8f0c8 !important; /* Verde claro al pasar el ratón */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.navbar-nav .active {
+    color: #ffd700 !important; /* Dorado para la opción activa */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,133 @@
+/* Establece un fondo verde suave para todo el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f9f4; /* Fondo claro y suave */
+    color: #2c3e50; /* Texto en color oscuro para contraste */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estilo para el contenedor principal del juego */
+h1 {
+    font-size: 2.5rem;
+    color: #27ae60; /* Verde característico de Binter */
+    margin-bottom: 20px;
+}
+
+/* Estilo para los párrafos y el contador de turnos */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #34495e; /* Color gris suave */
+}
+
+/* Estilo del tablero de cartas */
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Estilo de cada carta */
+button {
+    background-color: #2ecc71; /* Verde brillante */
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 100%;
+    height: 100px;
+}
+
+button:disabled {
+    background-color: #95a5a6; /* Color gris cuando la carta está volteada */
+}
+
+button:hover {
+    transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
+}
+
+button:focus {
+    outline: none; /* Quitamos el borde azul cuando se hace clic */
+}
+
+/* Estilo para el formulario */
+form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Botón de reiniciar y salir */
+button[type="submit"] {
+    background-color: #e74c3c; /* Rojo para el botón de reiniciar */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #c0392b; /* Rojo más oscuro cuando se pasa el ratón */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+button[type="submit"]:last-of-type {
+    background-color: #16a085; /* Verde para el botón "Salir a la Principal" */
+}
+
+button[type="submit"]:last-of-type:hover {
+    background-color: #1abc9c; /* Verde más brillante */
+}
+
+/* Mensaje de victoria */
+h2 {
+    font-size: 1.8rem;
+    color: #27ae60;
+    margin-top: 20px;
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+    .tablero {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+    
+    p {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .tablero {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
