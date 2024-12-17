@@ -9,7 +9,7 @@
         $_SESSION['categoria'] = 'oro'; // Tarjeta oro
     }
 
-
+//prueba de perfil para guardar algo
       $nombreUsuario = isset($_SESSION['nombre']) ? htmlspecialchars($_SESSION['nombre']) : 'Usuario desconocido';
       $DNIUsuario = isset( $_SESSION['documento_numero']) ? htmlspecialchars( $_SESSION['documento_numero']) : 'Usuario desconocido';
       $EMAILUsuario = isset($_SESSION['email']) ? htmlspecialchars(     $_SESSION['email']) : 'Usuario desconocido';
